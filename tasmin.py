@@ -5,14 +5,8 @@ Created on Sun Feb  1 16:41:06 2026
 @author: tasmi
 """
 
-from PIL import Image
 import streamlit as st
 
-
-
-#for image
-img_path = r"C:\Users\tasmi\OneDrive\Desktop\tas.jpg"  # Windows path
-image = Image.open(img_path)
 
 
 with open("resume.txt", "r") as g:
@@ -146,7 +140,6 @@ if menu == "Researcher Profile":
     st.write(f"**Name:** {name}")
     st.write(f"**Field of Research:** {field}")
     st.write(f"**Institution:** {institution}")
-    st.image(image, caption="My Image", width='stretch')
 
 
 elif menu == "Employment History":
@@ -172,6 +165,7 @@ elif menu == "Contact":
     st.header("Contact Information")
     email = "tasmin.vdh@outlook.com"
     st.write(f"You can reach me at {email}.")
+
 
 
 
